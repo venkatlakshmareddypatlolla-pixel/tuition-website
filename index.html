@@ -141,6 +141,36 @@ footer{
 font-size:35px;
 }
 }
+    .popup {
+  display:none;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background:white;
+  max-width:400px;
+  margin:10% auto;
+  padding:20px;
+  border-radius:10px;
+}
+
+.popup-content input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+.close{
+  float:right;
+  font-size:28px;
+  cursor:pointer;
+}
+
 </style>
 </head>
 
@@ -162,7 +192,7 @@ font-size:35px;
 <section class="hero" id="home">
 <h1>Helping Children Learn & Grow</h1>
 <p>Quality Tuition Classes for Grades 1 - 10</p>
-<a href="#contact" class="btn">Enroll Today</a>
+<button class="btn" onclick="openPopup()">Enroll Today</button>
 </section>
 
 <section id="about">
@@ -256,6 +286,39 @@ Why Choose Us?
 <footer>
 <p>© 2026 Bright Future Tuition Center. All Rights Reserved.</p>
 </footer>
+<footer>
+<p>© 2026 Bright Future Tuition Center. All Rights Reserved.</p>
+</footer>
 
+<!-- Enrollment Popup -->
+<div id="enrollPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+
+    <h2>Student Enrollment Form</h2>
+
+    <form>
+      <input type="text" placeholder="Student Name" required>
+      <input type="text" placeholder="Parent Name" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <input type="text" placeholder="Class (e.g. Grade 5)" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function openPopup() {
+  document.getElementById("enrollPopup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("enrollPopup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
