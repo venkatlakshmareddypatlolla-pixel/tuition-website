@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future Kids Tuition Center</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+header{
+    background:#4CAF50;
+    color:white;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1500&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.about{
+    text-align:center;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color:#4CAF50;
+    margin-bottom:10px;
+}
+
+.why-us{
+    background:#eef7ee;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:35px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Bright Future Tuition</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Helping Children Learn & Grow</h1>
+<p>Quality Tuition Classes for Grades 1 - 10</p>
+<a href="#contact" class="btn">Enroll Today</a>
+</section>
+
+<section id="about">
+<div class="container about">
+<h2>About Us</h2>
+<br>
+<p>
+At Bright Future Tuition Center, we provide personalized learning
+support for children. Our experienced teachers focus on building
+strong fundamentals in Mathematics, Science and English while helping
+students gain confidence and achieve academic success.
+</p>
+</div>
+</section>
+
+<section id="courses">
+<div class="container">
+<h2 style="text-align:center; margin-bottom:30px;">Our Courses</h2>
+
+<div class="courses">
+
+<div class="card">
+<h3>Mathematics</h3>
+<p>Concept-based learning with practice exercises and test preparation.</p>
+</div>
+
+<div class="card">
+<h3>Science</h3>
+<p>Interactive lessons that make learning fun and engaging.</p>
+</div>
+
+<div class="card">
+<h3>English</h3>
+<p>Grammar, reading, vocabulary and communication skills.</p>
+</div>
+
+<div class="card">
+<h3>Homework Support</h3>
+<p>Daily homework guidance and academic mentoring.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="why-us">
+<div class="container">
+
+<h2 style="text-align:center; margin-bottom:30px;">
+Why Choose Us?
+</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Experienced Teachers</h3>
+<p>Qualified tutors with years of teaching experience.</p>
+</div>
+
+<div class="feature">
+<h3>Small Batch Size</h3>
+<p>Personal attention for every child.</p>
+</div>
+
+<div class="feature">
+<h3>Regular Assessments</h3>
+<p>Track progress through weekly and monthly tests.</p>
+</div>
+
+<div class="feature">
+<h3>Parent Updates</h3>
+<p>Regular communication regarding student performance.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+<h2>Contact Us</h2>
+<br>
+<p>📍 Hyderabad, Telangana</p>
+<p>📞 +91 98765 43210</p>
+<p>📧 info@brightfuturetuition.com</p>
+<p>Monday - Saturday: 4 PM to 9 PM</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Bright Future Tuition Center. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
